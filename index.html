@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ekan Anaikot — Web Developer, CAD/3D Artist & Game Developer</title>
+
+        <meta name="description" content="Ekan Anaikot builds responsive web apps, 3D/CAD assets and game prototypes. Based in Uyo, Nigeria. Open to freelance work, internships and collaborations."/>
+
+        <!-- FONTS -->
+        <!-- ROBOTO MONO -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css" />
+
+    </head>
+
+    <body>
+        <canvas id="cubes" aria-hidden="true"></canvas>
+
+        <header>
+            <div class="top">
+                <a href="#" class="logo">Ekan<span>.</span></a>
+            </div>
+
+            <div class="wrap">
+                <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+                    <a href="#services">Services</a>
+                    <a href="#work">Work</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Credentials</a>
+                    <a href="#about">About</a>
+
+                    <a href="#contact" class="btn pri">Hire me</a>
+                </nav>
+            </div>
+
+            <!-- <div class="ham">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div> -->
+
+            <button
+            class="nav-toggle"
+            id="nav-toggle"
+            type="button"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+            aria-label="Open navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <main id="main">
+            <section id="hero">
+                <div class="wrap">
+                    <span class="mono status"><i aria-hidden="true"></i>Open to freelance &amp; contracts</span>
+
+                    <div class="intro">
+                        <p class="mono-intro hello">// hello, world</p>
+
+                        <h3>I'm</h3>
+                        
+                        <h1>EKAN ANAIKOT<span class="cursor" aria-hidden="true"></span></h1>
+                    </div>
+
+                    <p>
+                        Web Developer, 3D Artist, Game Developer, with an engineer's attention to detail.
+                    </p>
+
+                    <div class="cta">
+                        <a href="#work" class="btn sec">See my work →</a>
+
+                        <a href="#contact" class="btn">Let's talk</a>
+                    </div>
+                </div>
+
+                <!-- <canvas
+                    id="cube"
+                    aria-label="Rotating 3D wireframe"
+                    role="img"
+                ></canvas> -->
+
+                <canvas id="ascii-portrait" role="img" aria-label="ASCII-art portrait of Ekan"></canvas>
+            </section>
+
+            <section id="work"></section>
+
+            <section id="skills"></section>
+
+            <section id="education"></section>
+
+            <section id="certifications"></section>
+
+            <section id="about"></section>
+
+            <section id="contact"></section>
+        </main>
+
+        <script src="index.js"></script>
+        <script src="floating-cubes.js"></script>
+        <script src="ascii-portrait-data.js"></script>
+        <script src="ascii-portrait.js"></script>
+    </body>
+</html>
